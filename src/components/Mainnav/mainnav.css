@@ -1,0 +1,28 @@
+.main-nav > div{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.main-nav a{
+    color: #fff;
+    text-transform: capitalize;
+    margin: 5px 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.active{
+    border: 1px solid #fff;
+    padding: 5px 10px;
+}
+
+
+.main-nav a:hover, .active:hover{
+    opacity: .8;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -ms-transition: 400ms;
+    -o-transition: 400ms;
+}

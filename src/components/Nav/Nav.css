@@ -1,0 +1,12 @@
+.nav{
+    width: 100%;
+    padding: 16px 0;
+    background: #353b80;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+h2 {
+  color: #fff;
+}
