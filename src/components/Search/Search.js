@@ -24,6 +24,7 @@ const Search = () => {
 };
 
 const styles = css`
+  margin: 28px 0 0 0;
   display: flex;
   align-items: center;
   .formContainer {

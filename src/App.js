@@ -1,6 +1,6 @@
 import React from "react";
 import { RecipesState } from "./context/RecipesContext";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import Contact from "./components/Contact/contact";
@@ -12,10 +12,14 @@ const App = () => {
     <RecipesState>
       <Router>
         <Nav />
-        <Route exact path="/" component={Hero} />
-        <Route exact path="/home" component={Hero} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/recipes/:id" component={FullRecipe} />
+
+        <Switch>
+            <Route path="/" exact component={Hero} />
+            <Route path="/home" component={Hero} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/recipes/:id" component={FullRecipe} />
+        </Switch>
+
       </Router>
     </RecipesState>
   );

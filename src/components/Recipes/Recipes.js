@@ -3,23 +3,24 @@ import { css, jsx } from "@emotion/core";
 import React, { useContext } from "react";
 import { RecipesContext } from "../../context/RecipesContext";
 import { Link } from "react-router-dom";
+import ErrorMsg from "./ErrorMsg";
 
 const Recipes = () => {
   const { recipes, error, loading } = useContext(RecipesContext);
 
   return (
-    
-
     <React.Fragment>
-
+      {error && <ErrorMsg />}
       {recipes &&
         !error &&
         !loading &&
-
         recipes.map((recipe, index) => (
-          
           <div css={styles} key={index} className="recipe">
-            <a>
+            <a
+              href={recipe.recipe.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div
                 style={{
                   background: `url(${recipe.recipe.image}) no-repeat center/cover`,
