@@ -3,7 +3,6 @@ import { css, jsx } from "@emotion/core";
 import React, { useContext } from "react";
 import { RecipesContext } from "../../context/RecipesContext";
 import Container from "../reusableComponents/Container";
-import Search from "../Search/Search";
 import Recipes from "../Recipes/Recipes";
 import Pagination from "../Pagination/Pagination";
 import Loader from "../Loader/Loader";

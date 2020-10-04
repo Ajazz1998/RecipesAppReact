@@ -8,15 +8,16 @@ const Button = ({ btnText, handleClick }) => (
 );
 
 const styles = css`
-  border: none;
+  border: 1px solid #fff;
   outline: none;
   width: 90px;
-  padding: 10px 0;
+  padding: 9px 0;
   color: #fff;
   background: #353b80;
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
+  margin-left:5px;
 `;
 
 export default Button;
