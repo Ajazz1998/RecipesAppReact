@@ -3,7 +3,9 @@ import { css, jsx } from "@emotion/core";
 import React, { useContext } from "react";
 import { RecipesContext } from "../../context/RecipesContext";
 import Container from "../reusableComponents/Container";
+
 import Recipes from "../Recipes/Recipes";
+import Recipe from "../Recipes/recipe";
 import Pagination from "../Pagination/Pagination";
 import Loader from "../Loader/Loader";
 
@@ -19,6 +21,7 @@ const Hero = () => {
       ) : (
         <React.Fragment>
           <Container>
+            <Recipe />
             <Recipes />
           </Container>
           <Pagination />

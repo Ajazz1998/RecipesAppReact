@@ -18,7 +18,11 @@ class MainNav extends Component {
           </Link>
 
           <Link to={'/contact'}>
-            <p>contacts us</p>
+             <p>contacts us</p>
+          </Link>
+
+          <Link to={'/log'}>
+             <p>Log in</p>
           </Link>
 
 
