@@ -63,6 +63,7 @@ export const RecipesState = ({ children }) => {
     searchRecipes();
   }, [firstRecipe, lastRecipe]);
 
+
   useEffect(() => {
     getFirstResults();
   }, []);

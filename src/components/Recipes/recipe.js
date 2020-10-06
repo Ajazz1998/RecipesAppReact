@@ -16,8 +16,6 @@ const Recipes = () => {
         !error &&
         !loading &&
        recipes.map((recipe, index) => {
-        if (index === 1) {
-
          return  <div css={styles} key={index} className="recipe">
         <a>
           <div
@@ -28,7 +26,7 @@ const Recipes = () => {
           ></div>
         </a>
       </div>
-        }
+        
     }
           
 
