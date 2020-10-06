@@ -2,7 +2,6 @@
 import { css, jsx } from "@emotion/core";
 import React, { useContext } from "react";
 import { RecipesContext } from "../../context/RecipesContext";
-import { Link } from "react-router-dom";
 import ErrorMsg from "./ErrorMsg";
 
 const Recipes = () => {
@@ -10,23 +9,30 @@ const Recipes = () => {
 
   return (
     <React.Fragment>
+    
       {error && <ErrorMsg />}
+      
       {recipes &&
         !error &&
         !loading &&
-       recipes.map((recipe, index) => (
-        
-          <div css={styles} key={index} className="recipe">
-            <a>
-              <div
-                style={{
-                  background: `url(${recipe.recipe.image}) no-repeat center/cover`,
-                }}
-                className="recipeBg"
-              ></div>
-            </a>
-          </div>
-       ))}
+       recipes.map((recipe, index) => {
+        if (index === 1) {
+
+         return  <div css={styles} key={index} className="recipe">
+        <a>
+          <div
+            style={{
+              background: `url(${recipe.recipe.image}) no-repeat center/cover`,
+            }}
+            className="recipeBg"
+          ></div>
+        </a>
+      </div>
+        }
+    }
+          
+
+       )}
     </React.Fragment>
   );
 };

@@ -17,14 +17,14 @@ const Recipes = () => {
        recipes.map((recipe, index) => (
 
           <div css={styles} key={index} className="recipe">
-            <a>
+            <Link to={`/recipes/${recipe.recipe.label}`}>
               <div
                 style={{
                   background: `url(${recipe.recipe.image}) no-repeat center/cover`,
                 }}
                 className="recipeBg"
               ></div>
-            </a>
+            </Link>
             <div className="recipeInfo">
               <p>{recipe.recipe.label}</p>
               <p>{Math.floor(recipe.recipe.calories)} calories</p>
