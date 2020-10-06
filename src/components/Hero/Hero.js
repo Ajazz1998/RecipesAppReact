@@ -5,53 +5,44 @@ import { RecipesContext } from "../../context/RecipesContext";
 import Container from "../reusableComponents/Container";
 
 import Recipes from "../Recipes/Recipes";
-import Recipe from "../Recipes/recipe";
+import Recipe from "../Recipes/header";
 import Pagination from "../Pagination/Pagination";
 import Loader from "../Loader/Loader";
+
+import './hero.css'
 
 const Hero = () => {
   const { loading } = useContext(RecipesContext);
 
   return (
-    <section css={styles} className="hero">
-      <Container>
-      </Container>
+    <section  className="hero">
+
       {loading ? (
         <Loader />
       ) : (
+
         <React.Fragment>
-          <Container>
+
+        
+            <Container>
             <Recipe />
+
+            </Container>
+       
+
+      
+            <Container>
+
             <Recipes />
           </Container>
           <Pagination />
+       
+
+
         </React.Fragment>
       )}
     </section>
   );
 };
-
-const styles = css`
-  width: 100%;
-  min-height: calc(100vh - 58px);
-  padding-bottom: 28px;
-  position: relative;
-  .container {
-    &:nth-of-type(2) {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-  }
-  @media (max-width: 754px) {
-    .container {
-      &:nth-of-type(2) {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  }
-`;
 
 export default Hero;

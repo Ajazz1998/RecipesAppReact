@@ -57,7 +57,7 @@ const styles = css`
       }
     }
     a {
-      display: inline-block;
+      display: block;
       margin: 4px 0 0 0;
       padding: 8px;
       border: none;
