@@ -23,7 +23,12 @@ const Recipes = () => {
               background: `url(${recipe.recipe.image}) no-repeat center/cover`,
             }}
             className="recipeBg"
-          ></div>
+          >
+          
+              <p>{recipe.recipe.label}</p>
+              <p>{Math.floor(recipe.recipe.calories)} calories</p>
+
+          </div>
         </a>
       </div>
         
@@ -37,7 +42,7 @@ const Recipes = () => {
 
 const styles = css`
   width: 100%;
-  max-width: 330px;
+  max-width: 500px;
   margin: 28px 0 0 0;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   a {
