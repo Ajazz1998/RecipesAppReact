@@ -6,7 +6,10 @@ import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import Contact from "./components/Contact/contact";
 import Log from "./components/LogIn/log";
+import Footer from "./components/Footer/footer";
 import FullRecipe from "./components/Recipes/FullRecipe";
+
+
 import "./App.css";
 
 const App = () => {
@@ -23,6 +26,7 @@ const App = () => {
             <Route path="/recipes/:id" component={FullRecipe} />
         </Switch>
 
+        <Footer />
       </Router>
     </RecipesState>
   );

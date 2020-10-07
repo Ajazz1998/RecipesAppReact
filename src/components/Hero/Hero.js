@@ -23,19 +23,16 @@ const Hero = () => {
 
         <React.Fragment>
 
-        
+        <h1>Popular recipe collections...</h1>            
+
             <Container>
-            <h1>Popular recipe collections...</h1>            
-            <h1></h1>            
             <Header />
             </Container>
        
+            <h1>Our favourite Meal..</h1>            
 
       
             <Container>
-            <h1>Our favourite Meal..</h1>            
-            <h1></h1>  
-            <h1></h1>  
             <Recipes />
           </Container>
           <Pagination />
