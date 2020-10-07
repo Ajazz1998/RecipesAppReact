@@ -5,7 +5,7 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.hero .container:nth-child(3) {
+.hero .container:nth-child(4) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -13,23 +13,18 @@
 .hero h1{
     margin-top: 20px;
     font-size: 30px;
+    margin-left: 240px;
+}
+
+.hero .fix-h{
+    margin-top: 50px;
 }
 
 .hero h1::after{
     content:"";
     display:block;
     height:1px;
-    width:50%;
+    width:15%;
     background:#ccc;
     margin-top: 10px;
-}
-
-.hero h1:nth-child(2)::after{
-    content:"";
-    display:none;
-}
-
-.hero h1:nth-child(3)::after{
-    content:"";
-    display:none;
 }

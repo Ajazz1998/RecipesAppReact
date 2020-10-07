@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+
 import React, { useContext } from "react";
 import { RecipesContext } from "../../context/RecipesContext";
 import Container from "../reusableComponents/Container";
@@ -29,7 +28,7 @@ const Hero = () => {
             <Header />
             </Container>
        
-            <h1>Our favourite Meal..</h1>            
+            <h1 className="fix-h">Our favourite Meal..</h1>            
 
       
             <Container>
