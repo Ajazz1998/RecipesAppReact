@@ -3,6 +3,7 @@ import { css, jsx } from "@emotion/core";
 import React, { useContext } from "react";
 import { RecipesContext } from "../../context/RecipesContext";
 import ErrorMsg from "./ErrorMsg";
+import './header.css'
 
 const Recipes = () => {
   const { recipes, error, loading } = useContext(RecipesContext);
@@ -20,13 +21,17 @@ const Recipes = () => {
         <a>
           <div
             style={{
-              background: `url(${recipe.recipe.image}) no-repeat center/cover`,
+              background: `linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)), url(${recipe.recipe.image}) no-repeat center/cover`,
             }}
             className="recipeBg"
           >
+
+            <div className="show-back">
+                  <p>{recipe.recipe.label}</p>
+                  <p>{Math.floor(recipe.recipe.calories)} calories</p>
+            </div>
           
-              <p>{recipe.recipe.label}</p>
-              <p>{Math.floor(recipe.recipe.calories)} calories</p>
+
 
           </div>
         </a>

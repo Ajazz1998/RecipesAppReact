@@ -1,0 +1,14 @@
+.recipeBg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.show-back{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+}
