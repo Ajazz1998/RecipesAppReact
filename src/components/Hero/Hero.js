@@ -5,7 +5,7 @@ import { RecipesContext } from "../../context/RecipesContext";
 import Container from "../reusableComponents/Container";
 
 import Recipes from "../Recipes/Recipes";
-import Recipe from "../Recipes/header";
+import Header from "../Recipes/header";
 import Pagination from "../Pagination/Pagination";
 import Loader from "../Loader/Loader";
 
@@ -25,14 +25,17 @@ const Hero = () => {
 
         
             <Container>
-            <Recipe />
-
+            <h1>Popular recipe collections...</h1>            
+            <h1></h1>            
+            <Header />
             </Container>
        
 
       
             <Container>
-
+            <h1>Our favourite Meal..</h1>            
+            <h1></h1>  
+            <h1></h1>  
             <Recipes />
           </Container>
           <Pagination />

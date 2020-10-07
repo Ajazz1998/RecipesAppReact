@@ -2,6 +2,7 @@
 import { css, jsx } from "@emotion/core";
 import React, { useContext } from "react";
 import { RecipesContext } from "../../context/RecipesContext";
+import { Link } from "react-router-dom";
 import ErrorMsg from "./ErrorMsg";
 import './header.css'
 
@@ -18,7 +19,7 @@ const Recipes = () => {
         !loading &&
        recipes.map((recipe, index) => {
          return  <div css={styles} key={index} className="recipe">
-        <a>
+         <Link to={`/recipes/${recipe.recipe.label}`}>
           <div
             style={{
               background: `linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)), url(${recipe.recipe.image}) no-repeat center/cover`,
@@ -34,7 +35,7 @@ const Recipes = () => {
 
 
           </div>
-        </a>
+        </Link>
       </div>
         
     }
