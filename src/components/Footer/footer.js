@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../Contact/contact';
 import './footer.css';
 
 const footer = () => {
@@ -31,7 +32,7 @@ const footer = () => {
     <div className="col">
       <h1>Support</h1>
       <ul>
-        <li>Contact us</li>
+        <li><Link to={'/contact'}>Contact us</Link></li>
         <li>Web chat</li>
         <li>Open ticket</li>
       </ul>
