@@ -14,7 +14,6 @@ const footer = () => {
         <li>About</li>
         <li>Mission</li>
         <li>Services</li>
-        <li>Social</li>
         <li><Link to={'/contact'}>Get in touch</Link></li>
       </ul>
     </div>
