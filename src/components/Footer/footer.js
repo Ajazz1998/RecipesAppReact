@@ -38,9 +38,9 @@ const footer = () => {
     <div className="col social">
       <h1>Social</h1>
       <ul>
-        <li> <a href="https://github.com/Ajazz1998"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="img" /></a> </li>
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1024px-F_icon.svg.png" alt="img" /></li>
-        <li><img src="https://mavitecgreenenergy.com/wp-content/uploads/2016/04/Linkedin-Icon.png" alt="img" /></li>
+        <li> <a href="https://github.com/Ajazz1998"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="github" /></a> </li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1024px-F_icon.svg.png" alt="facebook" /></li>
+        <li><img src="https://mavitecgreenenergy.com/wp-content/uploads/2016/04/Linkedin-Icon.png" alt="Link In" /></li>
       </ul>
     </div>
   <div className="clearfix"></div>
