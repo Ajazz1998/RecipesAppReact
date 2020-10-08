@@ -43,6 +43,11 @@
     -webkit-transition: .2s;
     -moz-transition: .2s;
   }
+
+  .footer .col ul li a{
+    color: #999999;
+  }
+
   .social ul li {
     display: inline-block;
     padding-right: 5px !important;
@@ -54,6 +59,11 @@
     -webkit-transition: .1s;
     -moz-transition: .1s;
   }
+
+  .social img{
+    width: 40px;
+  }
+
   .clearfix {
     clear: both;
   }

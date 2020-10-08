@@ -15,7 +15,7 @@ const footer = () => {
         <li>Mission</li>
         <li>Services</li>
         <li>Social</li>
-        <li>Get in touch</li>
+        <li><Link to={'/contact'}>Get in touch</Link></li>
       </ul>
     </div>
     <div className="col">
@@ -32,7 +32,6 @@ const footer = () => {
     <div className="col">
       <h1>Support</h1>
       <ul>
-        <li><Link to={'/contact'}>Contact us</Link></li>
         <li>Web chat</li>
         <li>Open ticket</li>
       </ul>
@@ -40,9 +39,9 @@ const footer = () => {
     <div className="col social">
       <h1>Social</h1>
       <ul>
-        <li><img src="https://svgshare.com/i/5fq.svg" alt="img" /></li>
-        <li><img src="https://svgshare.com/i/5eA.svg" alt="img" /></li>
-        <li><img src="https://svgshare.com/i/5f_.svg" alt="img" /></li>
+        <li> <a href="https://github.com/Ajazz1998"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="img" /></a> </li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1024px-F_icon.svg.png" alt="img" /></li>
+        <li><img src="https://mavitecgreenenergy.com/wp-content/uploads/2016/04/Linkedin-Icon.png" alt="img" /></li>
       </ul>
     </div>
   <div className="clearfix"></div>

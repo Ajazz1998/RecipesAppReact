@@ -10,7 +10,13 @@
 .show-back{
     position: absolute;
     bottom: 0;
-    color: #fff;
     text-align: center;
     margin: 10px 0;
 }
+
+
+.show-back p{
+    color: #fff;
+
+}
+
