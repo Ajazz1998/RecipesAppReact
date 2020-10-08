@@ -59,6 +59,13 @@
     -webkit-transition: .1s;
     -moz-transition: .1s;
   }
+  
+  .footer .col ul li a:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
 
   .social img{
     width: 40px;

@@ -11,8 +11,8 @@ const footer = () => {
     <div className="col">
       <h1>Accounts</h1>
       <ul>
-        <li>About</li>
-        <li>Mission</li>
+      <li><Link to={'/about'}>About</Link></li>
+      <li>Mission</li>
         <li>Services</li>
         <li><Link to={'/contact'}>Get in touch</Link></li>
       </ul>

@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './mainnav.css';
 
-
-
 class MainNav extends Component {
 
   render() {
@@ -21,8 +19,8 @@ class MainNav extends Component {
              <p>contacts us</p>
           </Link>
 
-          <Link to={'/log'}>
-             <p>Log in</p>
+          <Link to={'/about'}>
+             <p>About</p>
           </Link>
 
 

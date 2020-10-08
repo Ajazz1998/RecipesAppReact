@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import Contact from "./components/Contact/contact";
-import Log from "./components/LogIn/log";
+import About from "./components/About/about";
 import Footer from "./components/Footer/footer";
 import FullRecipe from "./components/Recipes/FullRecipe";
 
@@ -22,7 +22,7 @@ const App = () => {
             <Route path="/" exact component={Hero} />
             <Route path="/home" component={Hero} />
             <Route path="/contact" component={Contact} />
-            <Route path="/log" component={Log} />
+            <Route path="/about" component={About} />
             <Route path="/recipes/:id" component={FullRecipe} />
         </Switch>
 
