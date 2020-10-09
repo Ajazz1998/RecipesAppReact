@@ -38,6 +38,7 @@ const FullRecipe = () => {
                     )
                   )}
                 </div>
+                <button className="btns">Buy Now</button>
 
               </div>
             ))}
