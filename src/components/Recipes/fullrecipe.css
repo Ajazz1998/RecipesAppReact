@@ -1,0 +1,43 @@
+.fullRecipe {width: 100%;
+min-height: calc(100vh - 58px);
+display: flex;
+margin-top: 40px;
+}
+
+.container {
+  margin: auto;
+}
+  .fullRecipeCard {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+    .fullRecipeBg {
+      width: 100%;
+      max-width: 100%;
+      min-height: 500px;
+      height: 500px;
+    }
+
+    .fullRecipeInfo {
+      width: 100%;
+      padding: 0 38px;
+      color: #000;
+    }
+
+    .fullRecipeInfo h2{
+      color: #000;
+      font-size: 37px;
+    }
+
+    .fullRecipeInfo p{
+      color: #353b80;
+      font-size: 27px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+
+    .fullRecipeInfo ul{
+        padding-left: 40px;
+    }
+

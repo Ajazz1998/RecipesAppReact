@@ -21,7 +21,7 @@ export const RecipesState = ({ children }) => {
     const response = await fetch(FIRST_REQ);
     const data = await response.json();
     setRecipes(data.hits);
-
+    console.log(data)
     setLoading(false);
   };
 
