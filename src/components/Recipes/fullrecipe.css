@@ -41,3 +41,30 @@ margin-top: 40px;
         padding-left: 40px;
     }
 
+    .fullRecipeInfo .btns{
+        background-color: #353b80;
+        padding: 5px 25px;
+        margin-top: 20px;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
+.fullRecipeInfo .btns:hover{
+    background: transparent;
+    color: #000;
+    border: 1px solid #353b80;
+    transition: 600ms;
+    -webkit-transition: 600ms;
+    -moz-transition: 600ms;
+    -ms-transition: 600ms;
+    -o-transition: 600ms;
+}
+
+.fullRecipeInfo .btns:focus{
+    outline: none;
+}
