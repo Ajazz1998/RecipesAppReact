@@ -1,0 +1,29 @@
+.about{
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.about .container{
+    margin: 50px 0;
+}
+
+.about .container img{
+    width: 500px;
+    height: 400px;
+    margin-right: 20px;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+
+.about .container p{
+    opacity: .7;
+}
+
+.about .container .col-lg-5{
+    margin-top: 20px;
+}
+
