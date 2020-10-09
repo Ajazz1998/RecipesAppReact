@@ -1,8 +1,11 @@
 import React from 'react';
-import './contact.css'
+import './contact.css';
+import Footer from "../Footer/footer";
+
 
 const contact = () => {
     return (
+      <>
 <div id="container">
   <h1>&bull; Keep in Touch &bull;</h1>
   <div className="underline">
@@ -44,6 +47,9 @@ const contact = () => {
     </div>
   </form>
 </div>
+
+<Footer />
+</>
     )
 }
 

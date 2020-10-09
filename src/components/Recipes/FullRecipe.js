@@ -1,9 +1,11 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import { jsx } from "@emotion/core";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { RecipesContext } from "../../context/RecipesContext";
 import Container from "../reusableComponents/Container";
+import Footer from "../Footer/footer";
+
 
 import './fullrecipe.css'
 
@@ -12,6 +14,7 @@ const FullRecipe = () => {
   const { id } = useParams();
 
   return (
+    <div>
     <section className="fullRecipe">
       <Container>
         {recipes &&
@@ -46,6 +49,8 @@ const FullRecipe = () => {
             ))}
       </Container>
     </section>
+    <Footer />
+    </div>
   );
 };
 

@@ -6,7 +6,6 @@ import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import Contact from "./components/Contact/contact";
 import About from "./components/About/about";
-import Footer from "./components/Footer/footer";
 import FullRecipe from "./components/Recipes/FullRecipe";
 
 
@@ -26,7 +25,6 @@ const App = () => {
             <Route path="/recipes/:id" component={FullRecipe} />
         </Switch>
 
-        <Footer />
       </Router>
     </RecipesState>
   );

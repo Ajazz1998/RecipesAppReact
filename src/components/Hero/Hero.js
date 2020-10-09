@@ -6,6 +6,8 @@ import Container from "../reusableComponents/Container";
 import Recipes from "../Recipes/Recipes";
 import Header from "../Recipes/header";
 import Pagination from "../Pagination/Pagination";
+import Footer from "../Footer/footer";
+
 import Loader from "../Loader/Loader";
 
 import './hero.css'
@@ -36,7 +38,7 @@ const Hero = () => {
           </Container>
           <Pagination />
        
-
+           <Footer />
 
         </React.Fragment>
       )}

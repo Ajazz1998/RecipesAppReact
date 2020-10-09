@@ -1,8 +1,12 @@
 import React from 'react';
-import './about.css'
+import './about.css';
+import Footer from "../Footer/footer";
+
 
 const log = () => {
+    
   return (
+      <>
     <div className="about">
       <div className="container">
           <div className="col-lg-7">
@@ -26,6 +30,9 @@ const log = () => {
           </div>
       </div>
     </div>
+    <Footer />
+    
+    </>
   );
 }
 
