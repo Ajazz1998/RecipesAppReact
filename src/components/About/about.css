@@ -27,3 +27,50 @@
     margin-top: 20px;
 }
 
+@media screen and (max-width: 1070px){
+    .about{
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .about .container img{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .about .container img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .about .container img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .about .container{
+        display: block;
+    }
+
+    .about{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .about .container img{
+        width: 320px;
+    }
+}
+
+
+@media screen and (max-width: 340px){
+    .about .container img{
+        width: 270px;
+    }
+}
