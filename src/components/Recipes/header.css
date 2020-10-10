@@ -1,4 +1,9 @@
-
+.recipess{
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    margin-top: 10px;
+}
 
 .recipeBg{
     position: relative;
@@ -11,12 +16,18 @@
     position: absolute;
     bottom: 0;
     text-align: center;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 
 .show-back p{
     color: #fff;
 
+}
+
+@media screen and (max-width:1070px){
+    .recipess{
+        width: 97%;
+    }
 }
 

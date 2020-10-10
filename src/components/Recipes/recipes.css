@@ -54,16 +54,8 @@ a {
     cursor: pointer;
 }
 
-@media (max-width: 754px) {
+@media screen and (max-width:1070px){
     .recipe{
-        max-width: 520px;
-    }
-
-}
-
-
-  @media (min-width: 755px) and (max-width: 1110px){
-    .recipe{
-        max-width: 520px;
+        width: 97%;
     }
 }

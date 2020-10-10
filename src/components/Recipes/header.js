@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import { jsx } from "@emotion/core";
 import React, { useContext } from "react";
 import { RecipesContext } from "../../context/RecipesContext";
 import { Link } from "react-router-dom";
@@ -18,7 +18,7 @@ const Recipes = () => {
         !error &&
         !loading &&
        recipes.map((recipe, index) => {
-         return  <div key={index} className="recipe">
+         return  <div key={index} className="recipess">
          <Link to={`/recipes/${recipe.recipe.label}`}>
           <div
             style={{

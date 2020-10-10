@@ -11,7 +11,7 @@ const styles = css`
   width: 100%;
   max-width: 1060px;
   margin: 0 auto;
-  @media (max-width: 1110px) {
+  @media (max-width: 1070px) {
     max-width: 94%;
   }
 `;
