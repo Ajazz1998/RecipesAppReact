@@ -42,4 +42,23 @@
     .hero .container{
         max-width: 100%;
     } 
-  }
+}
+
+@media screen and (max-width: 700px) {
+
+    .hero .container:nth-child(4) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .hero .container:nth-child(2) {
+        display: block;
+    }
+    
+    .hero .container:nth-child(4) {
+        display: block;
+    }
+    
+}
