@@ -1,7 +1,8 @@
-.main-nav > div{
+.main-nav .show-menu{
     display: flex;
     list-style: none;
     align-items: center;
+    margin-left: 20px;
 }
 
 .main-nav a{
@@ -25,4 +26,28 @@
     -moz-transition: 400ms;
     -ms-transition: 400ms;
     -o-transition: 400ms;
+}
+
+.bar{
+    position: absolute;
+    right: 0;
+    display: none;
+    margin-right:10px ;
+    margin-bottom: -20px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px){
+    .main-nav .min-show{
+        display: block;
+    }
+    .main-nav .show-menu{
+        display: none;
+    }
+
+    .bar{
+        display: block;
+    }
 }
