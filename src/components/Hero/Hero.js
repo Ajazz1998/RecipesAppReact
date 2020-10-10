@@ -23,6 +23,8 @@ const Hero = () => {
       ) : (
 
         <React.Fragment>
+        
+        <div className ="hero-fix">
 
         <h1>Popular recipe collections...</h1>            
 
@@ -37,7 +39,7 @@ const Hero = () => {
             <Recipes />
           </Container>
           <Pagination />
-       
+          </div>
            <Footer />
 
         </React.Fragment>

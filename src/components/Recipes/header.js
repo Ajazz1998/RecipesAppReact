@@ -18,7 +18,7 @@ const Recipes = () => {
         !error &&
         !loading &&
        recipes.map((recipe, index) => {
-         return  <div css={styles} key={index} className="recipe">
+         return  <div key={index} className="recipe">
          <Link to={`/recipes/${recipe.recipe.label}`}>
           <div
             style={{
@@ -46,46 +46,5 @@ const Recipes = () => {
   );
 };
 
-const styles = css`
-  width: 100%;
-  max-width: 500px;
-  margin: 28px 0 0 0;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  a {
-    text-decoration: none;
-    .recipeBg {
-      width: 100%;
-      height: 280px;
-    }
-  }
-  .recipeInfo {
-    background: #202342;
-    padding: 24px 34px;
-    p {
-      color: #fafafa;
-      &:last-of-type {
-        margin: 6px 0;
-      }
-    }
-    a {
-      display: block;
-      margin: 4px 0 0 0;
-      padding: 8px;
-      border: none;
-      outline: none;
-      color: #fff;
-      background: #353b80;
-      font-weight: 600;
-      letter-spacing: 1px;
-      cursor: pointer;
-    }
-  }
-  @media (max-width: 754px) {
-    max-width: 520px;
-  }
-  @media (min-width: 755px) and (max-width: 1110px){
-    max-width: 48%;
-  }
-`;
 
 export default Recipes;

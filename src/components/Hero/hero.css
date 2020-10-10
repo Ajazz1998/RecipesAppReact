@@ -1,4 +1,10 @@
 
+.hero .hero-fix{
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
 
 .hero .container:nth-child(2) {
     display: grid;
@@ -13,7 +19,6 @@
 .hero h1{
     margin-top: 20px;
     font-size: 30px;
-    margin-left: 240px;
 }
 
 .hero .fix-h{
